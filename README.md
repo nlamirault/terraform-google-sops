@@ -47,3 +47,26 @@ keyring_location = "europe-west1"
 ```
 
 ## Documentation
+
+### Providers
+
+| Name | Version |
+|------|---------|
+| google | >= 3.54.0 |
+
+### Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:-----:|
+| keyring\_location | The KMS keyring location | `string` | n/a | yes |
+| namespace | The Kubernetes namespace | `string` | n/a | yes |
+| project | The project in which the resource belongs | `string` | n/a | yes |
+| service\_account | The Kubernetes service account | `string` | n/a | yes |
+
+### Outputs
+
+| Name | Description |
+|------|-------------|
+| email | Service account email |
+| key | KMS Key for Sops |
+
