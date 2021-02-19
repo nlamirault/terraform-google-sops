@@ -20,7 +20,7 @@ These types of resources are supported:
 module "sops" {
   source  = "nlamirault/sops/google"
   version = "1.0.0"
-  
+
   project = var.project
 
   keyring_location = var.keyring_location
@@ -69,4 +69,3 @@ keyring_location = "europe-west1"
 |------|-------------|
 | email | Service account email |
 | key | KMS Key for Sops |
-

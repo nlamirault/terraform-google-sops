@@ -14,7 +14,7 @@
 #####################################################################""
 # Provider
 
-variable project {
+variable "project" {
   type        = string
   description = "The project in which the resource belongs"
 }
@@ -23,19 +23,19 @@ variable project {
 ############################################################################
 # Sops
 
-variable keyring_location {
+variable "keyring_location" {
   type        = string
   description = "The KMS keyring location"
 }
 
 # Workload Identity
 
-variable namespace {
+variable "namespace" {
   type        = string
   description = "The Kubernetes namespace"
 }
 
-variable service_account {
+variable "service_account" {
   type        = string
   description = "The Kubernetes service account"
 }
